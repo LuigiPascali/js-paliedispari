@@ -9,8 +9,10 @@
 :root {
     /* Color Palette */
     
-    --light_color:#FFFFFF ;
-    --dark_color: #0A0A0A ;
-
+    --light_color:#FFFFFF;
+    --dark_color: #0A0A0A;
+    --card_color: #C7EBF0;
+    --btn_color: #6CA6C1;
+    --hover_color: #5C8CA1;
 }
 

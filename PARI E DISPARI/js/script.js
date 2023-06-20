@@ -90,7 +90,7 @@ document.getElementById("play-button").addEventListener("click", function() {
 
     // Determinazione del vincitore
     let winner = "";
-    if (result === "pari") {
+    if (result === userChoice) {
       winner = "Tizio Incognito";
     } else {
       winner = "Computer";

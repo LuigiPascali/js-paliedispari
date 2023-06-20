@@ -1,6 +1,6 @@
 /* 
     Chiedo all'utente di scegliere tra pari o dispari e di inserire un numero da 1 a 5
-        Inserisco un alert in caso venga inserito un valore numerico al posto di pari o dispari
+        Inserisco un alert in caso venga inserito un valore numerico o altro al posto di pari o dispari
         Inserisco un alert in caso venga inserito del testo o un numero superiore a 5 o negativo quando chiedo di inserire un numero
     Genero un numero random per il computer
     Sommo i due numeri

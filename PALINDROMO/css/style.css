@@ -1,3 +1,12 @@
 /* 
     MAIN
 */
+.comic {position: relative;display: flex;align-items: center;margin-top: 2rem;margin-bottom: 2.5rem;}
+
+.comic-bubble {position: absolute;top: -3.125rem;left: 7.5rem;padding: .625rem;background-color: var(--bubble_bg);border-radius: .625rem;border: .0625rem solid #ddd;width: 15.625rem;}
+
+.comic-text {font-size: 14px;color: var(--dark_color);}
+
+.btn {background-color: var(--btn_color);color: var(--dark_color);border: .0625rem solid var(--dark_color);}
+
+.btn:hover {background-color: var(--hover_color);}

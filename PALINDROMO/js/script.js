@@ -6,6 +6,8 @@
     ALTRIMENTI la parola non è palindroma, stampo "La parola non è palindroma"
 */
 
+// VERSIONE 1: 
+
 // Chiedo all'utente di inserire una parola:
 
 let word = prompt("Inserisci una parola: ");

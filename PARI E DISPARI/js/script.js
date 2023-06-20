@@ -48,31 +48,47 @@
 
 // VERSIONE 2:
 
+// Funzione per verificare se un numero è pari
 function isEven(number) {
     return number % 2 === 0;
 }
 
+// Generazione del numero casuale per l'utente
 let userNumber = Math.floor(Math.random() * 5) + 1;
+
+// Generazione del numero casuale per il computer
 let cpuNumber = Math.floor(Math.random() * 5) + 1;
 
+// Aggiunta di un listener per il click del pulsante "Play"
 document.getElementById("play-button").addEventListener("click", function() {
+    // Richiesta all'utente di scegliere tra "pari" o "dispari"
     let userChoice = prompt("Scegli pari o dispari");
+
+    // Controllo che l'utente abbia inserito "pari" o "dispari"
     if (userChoice!== "pari" && userChoice!== "dispari") {
         alert ("Inserisci solo 'pari' o 'dispari'");
         return;
     }
 
+    // Richiesta all'utente di inserire un numero da 1 a 5
     let userNumber = parseInt (prompt("Inserisci un numero da 1 a 5"));
+
+    // Controllo che l'utente abbia inserito un numero valido
     if (isNaN(userNumber) || userNumber < 1 || userNumber > 5) {
        alert ("Inserisci solo un numero da 1 a 5");
        return;
     }
 
+    // Generazione del numero casuale per il computer
     let cpuNumber = Math.floor(Math.random() * 5) + 1;
 
+    // Calcolo della somma tra i due numeri
     let sum = userNumber + cpuNumber;
+
+    // Verifica se la somma è pari o dispari
     let result = isEven(sum)? "pari" : "dispari";
 
+    // Determinazione del vincitore
     let winner = "";
     if (result === "pari") {
       winner = "Tizio Incognito";
@@ -80,9 +96,12 @@ document.getElementById("play-button").addEventListener("click", function() {
       winner = "Computer";
     }
 
+    // Aggiornamento dei testi delle card con le scelte dell'utente e del computer
     document.getElementById("user-choice").textContent = userChoice;
     document.getElementById("user-number").textContent = userNumber;
     document.getElementById("cpu-number").textContent = cpuNumber;
+
+    // Aggiornamento del testo del vincitore
     document.getElementById("winner").textContent = winner;
 });
 

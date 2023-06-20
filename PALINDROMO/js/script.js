@@ -38,7 +38,6 @@ function isPalindrome(word) {
     // Confronta la parola originale con la parola invertita accettando anche le iniziali maiuscole
     return word.toLowerCase() === word.toLowerCase().split("").reverse().join("");
 }
-
 function checkPalindrome() {
     // Ottieni l'elemento di input HTML con l'id "wordInput"
     let wordInput = document.getElementById("wordInput");
@@ -60,7 +59,7 @@ function checkPalindrome() {
             alert(word + " è palindroma! Infatti per parola palindroma si intende: verso, frase, parola o cifra che letta in senso inverso mantiene immutato il significato.");
         } else { 
             // Mostra un messaggio se la parola non è palindroma
-            alert(word + " non è palindroma!");
+            alert(word + " non è palindroma! Ti do un indizio, cosa noti nella frase Otto ama Anna?");
         }
     }
 }
